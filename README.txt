@@ -1,29 +1,34 @@
-MANGO PIZZA HUT — MOBILE WEB POS
+MANGU PIZZA HUT — MOBILE WEB POS UPDATE
 
-FEATURES
-- Responsive layout for mobile and desktop
-- Product search and category filters
-- Add products with name/category/price
-- Cart quantity controls, order type and payment method
-- Checkout saves order, receipt preview and print option
-- Daily sales/order count and recent orders
-- JSON backup export/import
-- Browser local storage; no server/account needed
-- Service worker for offline use after first load when served from localhost/HTTPS
+Files in this folder are the complete GitHub Pages website.
 
-EASIEST TEST ON YOUR WINDOWS LAPTOP
-1. Extract this ZIP into a folder.
-2. Open the folder and double-click index.html. The app will work for local testing and data is saved in that browser profile.
-3. For installable home-screen/PWA and reliable offline caching, serve the folder from localhost or HTTPS (not file://). If Python is installed, open Command Prompt in this folder and run:
-   python -m http.server 8000
-   Then open http://localhost:8000 in Chrome.
+NEW RECEIPT FEATURES
+- Save PDF: opens the browser print dialog; choose “Save as PDF” (on Android, select Save as PDF in the print destination).
+- Save Image: downloads a PNG receipt image.
+- Share: uses the phone/browser share sheet and shares the receipt image when file sharing is supported.
+- Reprint old receipt: use the Receipt button beside a recent order.
+- Print: opens the print dialog for a paper receipt or PDF.
 
-OPEN ON ANDROID PHONE
-For phone use, put these files on a static HTTPS host such as GitHub Pages, then open the HTTPS site in Chrome and use menu > Add to Home screen / Install app. You can also test on the same Wi-Fi using a local server and laptop IP, but HTTPS hosting is easier for PWA installation.
+PUBLISH THE UPDATE
+1. Extract this ZIP.
+2. Open your GitHub repository Mango-Pizza-Hut.
+3. Choose Add file > Upload files.
+4. Upload all files from inside MangoPizzaHut_WebPOS, replacing the existing files.
+5. Commit changes. GitHub Pages will redeploy automatically.
+6. On your phone, refresh the website. If the installed app still shows the old version, close it and reopen it; the service worker cache has been versioned to refresh.
 
-DATA IMPORTANT
-- Products and orders are saved only in this browser's localStorage on this device/browser profile.
-- Data does NOT automatically sync with the Windows Python/SQLite POS or other devices.
-- Clearing browser data, uninstalling/resetting the browser, or changing browser profiles may remove local data. Use Export backup regularly.
-- To move data to another browser/device, export JSON on the old device and import it on the new device.
-- For multi-device shared data, a backend/database is required; this version intentionally does not include one.
+DATA NOTE
+This app stores products and orders in the browser's localStorage on each device. Data does not automatically sync between phone and laptop. Browser data clearing can erase it; use Export Backup regularly.
+
+PDF NOTE
+Browsers control the final PDF save location. The Save PDF button opens the print dialog; choose “Save as PDF” and then save to Downloads.
+
+BRANDING UPDATE
+- Software name: Mangu Pizza Hut.
+- Receipt location: Bata Market, Mangu.
+- Shop contact numbers shown on every receipt: 0303 6529725 and 0313 7286739.
+- Receipt footer watermark: SheikhHassan Developers.
+
+SOFTWARE DEVELOPER BRANDING
+- A compact “Developed by SheikhHassan Developers” credit appears at the bottom of the POS screen.
+- The same developer name remains on the receipt footer.

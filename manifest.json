@@ -1,1 +1,19 @@
-{"name":"Mango Pizza Hut POS","short_name":"Mango POS","description":"Mobile point of sale for Mango Pizza Hut","start_url":"./index.html","scope":"./","display":"standalone","background_color":"#100e0d","theme_color":"#17120f","orientation":"portrait","icons":[{"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]}
+{
+  "name": "Mangu Pizza Hut POS",
+  "short_name": "Mangu POS",
+  "description": "Mobile point of sale for Mangu Pizza Hut. Developed by SheikhHassan Developers.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#100e0d",
+  "theme_color": "#17120f",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
